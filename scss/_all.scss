@@ -1,0 +1,128 @@
+#header{
+	width: 100%;
+	background-color: $header-color;
+	border-top: 4px solid #a3c755;
+	position: fixed;
+	height: 74px;
+	z-index: 9;
+	h2{
+		padding: 18px 52px;
+		color: #3d6f2f;
+		letter-spacing: 1.2px;
+	}
+}
+	#panels{
+		position: relative;
+		height: 100%;
+		background: url('../img/cyprus-3184019_1920.jpg') no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+
+		.panels-overlay{
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			background-color: rgba(0, 0, 0, 0.8);
+			padding-bottom: 50px;
+			&-wrapp{
+				display: flex;
+				flex-wrap:wrap;
+				max-width: 1000px;
+				margin: 0 auto;
+				justify-content: space-around;
+			}
+			&-panel{
+				width: 272px;
+	 			border-radius: 3.3px;
+	  			background-color: #ffffff;
+	  			margin-top: 56px;
+	  			overflow: hidden;
+	  			&:hover img{
+					transform: scale(1.1);
+		  		}
+		  		img{
+		  			width: 102%;
+		  			height: 180px;
+		  			object-fit:cover;
+		  			transform-origin: center center;
+		  			transition: 0.5s ease-in-out;
+		  			transform: scale(1);
+
+		  		}
+	  			&-wrapp{
+	  				width: 100%;
+	  				padding: 14px 18px;
+		  			h3{
+		  				letter-spacing: 0.8px;
+		  				width: 218px;
+		  				font-weight: normal;		  			
+		  			}
+		  			a{
+		  				width: 210px;
+		  				letter-spacing: 0.6px;
+		  				font-weight: bold;	
+		  			}
+		  			&__controls{
+		  				display: flex;
+						justify-content: flex-start;
+						align-items: center;
+		  				img{
+		  					width: 14px;
+		  					height: 11px;
+		  					object-fit: cover;
+		  					&.like{
+		  						cursor: pointer;
+		  					}
+		  				}
+		  				span{
+		  					font-size: 12px;
+		  					margin-left: 5px;
+		  					margin-right: 10px;
+		  				}
+		  			}
+	  			}
+			}
+		}
+		h1{
+			z-index: 2;
+			text-align: center;
+			color: #fff;
+			padding-top: 151px;
+			padding-bottom: 51px;
+			letter-spacing: 2.4px;
+			color: #eaeaea;
+			font-weight: normal;
+			span{
+				color: #a3c755;
+			}
+		}
+}
+@media(max-width: 768px){
+	#panels{
+		position: relative;
+		height: 100%;
+		background: url('../img/cyprus-3184019_1920.jpg') no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+		.panels-overlay{
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			background-color: rgba(0, 0, 0, 0.8);
+			padding-bottom: 50px;
+			&-wrapp{
+				display: flex;
+				flex-wrap:wrap;
+				max-width: 100%;
+				margin: 0 auto;
+				justify-content: space-around;
+			}	
+		}
+	}
+}
